@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Singalong Studio Management</title>
+    <style>
+        /* ตั้งค่าให้หน้าเว็บหลักไม่มีช่องว่าง */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* ป้องกันการเลื่อนซ้อนกัน */
+            background-color: #1a3a4a; /* สีพื้นหลังธีม Singalong */
+        }
+
+        /* ตั้งค่า Iframe ให้เต็มหน้าจอ 100% */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- เปลี่ยน URL ในช่อง src เป็นลิงก์ Web App ของคุณ -->
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbyj7ct21fcJk-VrE4oDZO8i20xsGW4nToI3S-0ICC7PEmF85WGaBh2BZwIJbvMaphA3aQ/exec?page=teacherschedule" 
+        allow="clipboard-read; clipboard-write; camera; geolocation;"
+        title="Singalong Studio Schedule">
+    </iframe>
+
+</body>
+</html>
